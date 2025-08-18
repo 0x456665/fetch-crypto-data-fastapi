@@ -11,18 +11,22 @@ from .config import get_settings
 SETTINGS = get_settings()
 api_key = SETTINGS.API_KEY
 
-def get_amount_abbrv(price: int) -> str:
-    if price is None:
-        return None
-    if price > 1e12:
-        return f"{price / 1e12:.2f}T"
-    elif price > 1e9:
-        return f"{price / 1e9:.2f}B"
-    elif price > 1e6:
-        return f"{price / 1e6:.2f}M"
-    elif price > 1e3:
-        return f"{price / 1e3:.2f}K"
-    return str(price)
+def get_amount_abbrv(price: int) -> int:
+    # if price is None:
+    #     return None
+    # if price > 1e12:
+    #     return f"{price / 1e12:.2f}T"
+    # elif price > 1e9:
+    #     return f"{price / 1e9:.2f}B"
+    # elif price > 1e6:
+    #     return f"{price / 1e6:.2f}M"
+    # elif price > 1e3:
+    #     return f"{price / 1e3:.2f}K"
+    # return str(price)
+    # 
+    # 
+    # NO ABBREVIATION
+    return price
 
 
 def get_token_symbols(tokens_new) -> list[str]:

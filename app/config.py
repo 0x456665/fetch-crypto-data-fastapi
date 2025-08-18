@@ -140,6 +140,7 @@ class ConfigSettings(BaseSettings):
         "Official Trum (TRUMP)",
         "Dogs (DOGS)",
         "Sui (SUI)",
+        "Pump.fun (PUMP)"
     ]
 
 
