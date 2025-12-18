@@ -21,6 +21,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 origins = [
+    "https://crypto-fetcher-web.vercel.app",
     "http://localhost",
     "http://localhost:5173",
 ]
