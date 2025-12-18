@@ -13,3 +13,6 @@ class TableFieldsAndTickers(BaseModel):
     volume_change_24h: Optional[bool] = False
     token_address: Optional[bool] = False
     market_cap_dominance: Optional[bool]= False
+
+class V2DownloadRequest(TableFieldsAndTickers):
+    secret: Optional[str] = None
